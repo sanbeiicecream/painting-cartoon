@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+    <title>Clever Minion</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      *::after {
+        content: "";
+        display: block;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        position: absolute;
+      }
+
+      *::before {
+        content: "";
+        display: block;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        position: absolute;
+      }
+
+      .minion * {
+        position: absolute;
+      }
+
+      .display {
+        height: 100vh;
+      }
+
+      .codeArea {
+        height: 50vh;
+        position: relative;
+        overflow: auto;
+      }
+
+      .painting {
+        height: 50vh;
+        background-color: rgb(235, 125, 101);
+      }
+
+      .minion {
+        width: 140px;
+        height: 250px;
+        position: relative;
+        top: 0;
+        left: 20px;
+      }
+
+      .tool-bars {
+        position: fixed;
+        z-index: 5;
+        height: 200px;
+        display: flex;
+        width: 50px;
+        flex-direction: column;
+        justify-content: space-between;
+        right: 50px;
+        top: 50px;
+      }
+
+      .tool-bars > button {
+        width: 50px;
+        height: 30px;
+        border: none;
+        box-shadow: 0.2em 0.2em gray;
+      }
+
+      .tool-bars > button:focus {
+        background-color: rgb(235, 125, 101);
+      }
+
+    </style>
+    <style class="minionStyle"></style>
+</head>
+
+<body>
+<div class="display">
+    <header class="codeArea">
+        <main class="code"></main>
+        <aside class="tool-bars">
+            <button class="btnPlay">play</button>
+            <button class="btnPause">pause</button>
+            <button class="btnSlow">慢速</button>
+            <button class="btnNormal">正常</button>
+            <button class="btnFast">快速</button>
+            <button class="btnMusic">~music~</button>
+        </aside>
+    </header>
+    <main class="painting">
+        <div class="minionContainer">
+            <div class="minion">
+                <ul class="hair back">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <ul class="hair front">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <div class="goggle-strap left"></div>
+                <div class="goggle-strap-link left"></div>
+                <div class="goggle-frame left">
+                    <div class="goggle left">
+                        <div class="eye left"></div>
+                    </div>
+                </div>
+                <div class="goggle-strap right"></div>
+                <div class="goggle-strap-link right"></div>
+                <div class="goggle-frame right">
+                    <div class="goggle right">
+                        <div class="eye right"></div>
+                    </div>
+                </div>
+                <div class="minion-body">
+                    <div class="mouth"></div>
+                    <div class="arm left"></div>
+                    <div class="arm right"></div>
+                    <div class="head left">
+                        <div class="gloves"></div>
+                    </div>
+                    <div class="head right">
+                        <div class="gloves"></div>
+                    </div>
+                    <div class="dungarees">
+                        <div class="dungarees-bottom"></div>
+                        <div class="dungarees-front"></div>
+                        <div class="dungarees-pocket">
+                            <div class="logo">
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="dungarees-strap left">
+                            <div class="button"></div>
+                        </div>
+                        <div class="dungarees-strap right">
+                            <div class="button"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="goggle-shadow left"></div>
+                <div class="goggle-shadow right"></div>
+                <div class="arm-shadow left"></div>
+                <div class="arm-shadow right"></div>
+                <div class="arm left"></div>
+                <div class="fingers left"></div>
+                <div class="arm right"></div>
+                <div class="fingers right"></div>
+                <div class="leg left"></div>
+                <div class="leg right"></div>
+                <div class="shoe left"></div>
+                <div class="shoe right"></div>
+            </div>
+        </div>
+    </main>
+</div>
+<script src="./main.js"></script>
+</body>
+</html>
