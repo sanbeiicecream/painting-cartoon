@@ -53,7 +53,7 @@ const player = {
   },
   slow: () => {
     player.pause()
-    player.time = 300
+    player.time = 200
     player.play()
   },
   normal: () => {
@@ -62,6 +62,7 @@ const player = {
     player.play()
   },
   fast: () => {
+    audio.play().then()
     player.pause()
     player.time = 0
     player.play()
