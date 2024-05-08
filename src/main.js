@@ -1,4 +1,4 @@
-import string from './css'
+import string from './css.js'
 
 const audio = new Audio('music/PapaMamaLocaPipa.m4a')
 const player = {
