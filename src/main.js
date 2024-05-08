@@ -1,6 +1,6 @@
 import string from './css.js'
 
-const audio = new Audio('music/PapaMamaLocaPipa.m4a')
+const audio = new Audio('../public/music/PapaMamaLocaPipa.m4a')
 const player = {
   id: undefined,
   time: 100,
